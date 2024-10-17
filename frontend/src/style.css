@@ -45,6 +45,9 @@ body {
 .purple {
   color: var(--imp-text-color) !important;
 }
+.black {
+  color: #000000 !important;
+}
 
 .img-fluid {
   border-radius: 15px; /* Redondea las esquinas de las imágenes */

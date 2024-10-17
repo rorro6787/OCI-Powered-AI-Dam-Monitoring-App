@@ -38,7 +38,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={lynx} className="img-fluid logo" alt="brand" />
-          <b className="purple">Polish Cow</b>
+          <b className="green">Polish Cow</b>
         </Navbar.Brand>
 
         <Navbar.Toggle
