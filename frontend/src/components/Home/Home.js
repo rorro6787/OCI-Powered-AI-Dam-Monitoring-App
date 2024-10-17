@@ -43,8 +43,8 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
       <Home3 />
+      <Home2 />
     </section>
   );
 }

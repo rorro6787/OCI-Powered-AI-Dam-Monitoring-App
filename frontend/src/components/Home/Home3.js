@@ -10,7 +10,7 @@ function Home3() {
             {/* <Particle /> */}
             <Container className="home3-content">
                 <h1 style={{ paddingBottom: 15 }} className="heading">
-                    Título del Home 3
+                    Título del Home 3 - Parte funcional (embalses, estadisticas...)
                 </h1>
                 <Row>
                     {/* Primera Columna */}
@@ -20,8 +20,10 @@ function Home3() {
                         alt="Imagen 1"
                         className="img-fluid"
                     />
-                    <h5 className="mt-3">Título 1</h5>
-                    <p>Descripción breve de la imagen 1.</p>
+                    <h5 className="mt-3">Encuentra embalses cercanos</h5>
+                    <p>Localiza fácilmente todos los embalses dentro de un radio ajustable de hasta 100 km,
+                       usando tus coordenadas GPS o ingresando una ubicación manualmente.
+                    </p>
                     <a href="https://enlace-1.com" target="_blank" rel="noopener noreferrer">
                         Descubre más
                     </a>
@@ -34,8 +36,10 @@ function Home3() {
                         alt="Imagen 2"
                         className="img-fluid"
                     />
-                    <h5 className="mt-3">Título 2</h5>
-                    <p>Descripción breve de la imagen 2.</p>
+                    <h5 className="mt-3">Predice la escasez de agua</h5>
+                    <p>Anticipa posibles problemas de escasez de agua evaluando la cantidad embalsada en los embalses cercanos,
+                       y ajusta tus planes en función de la predicción.
+                    </p>
                     <a href="https://enlace-2.com" target="_blank" rel="noopener noreferrer">
                         Descubre más
                     </a>
@@ -48,8 +52,10 @@ function Home3() {
                         alt="Imagen 3"
                         className="img-fluid"
                     />
-                    <h5 className="mt-3">Título 3</h5>
-                    <p>Descripción breve de la imagen 3.</p>
+                    <h5 className="mt-3">Consulta estadísticas detalladas</h5>
+                    <p>Accede a estadísticas clave como valores anuales máximos, mínimos y medias para cada embalse, demarcación o área,
+                       y realiza filtrados por diferentes atributos.
+                    </p>
                     <a href="https://enlace-3.com" target="_blank" rel="noopener noreferrer">
                         Descubre más
                     </a>
