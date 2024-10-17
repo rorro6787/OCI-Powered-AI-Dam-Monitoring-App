@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 html {
 /*   --section-background-color: linear-gradient(
     to bottom left,
@@ -297,6 +298,9 @@ button:focus {
     transform: rotate(0deg);
   }
 }
+
+
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -309,7 +313,7 @@ button:focus {
 
 .home-header {
   padding-top: 80px !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #00BFFF;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
@@ -353,6 +357,16 @@ button:focus {
   text-align: center;
   position: relative;
   z-index: -1;
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif; /* Fuente bonita */
+  font-size: 1.5rem; /* Fuente grande */
+  color: #006400; /* Verde oscuro */
+  position: relative;
+  z-index: 9000 !important; /* Por encima de todas las capas */
+  text-align: center; /* Centrar el texto */
+  margin-top: 20px; /* Espacio superior */
 }
 
 .heading {
