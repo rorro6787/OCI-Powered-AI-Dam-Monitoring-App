@@ -40,6 +40,15 @@ function Embalses() {
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
     }).addTo(mapInstance);
+
+    // Añadir evento de clic al mapa
+    mapInstance.on('click', function(e) {
+      const { lat, lng } = e.latlng;
+      setLatitude(lat);
+      setLongitude(lng);
+      updateMap(lat, lng);
+    });
+
     setMap(mapInstance);
     updateMap(lat, lon); // Actualizar el mapa con el círculo y los embalses
   };
@@ -141,7 +150,7 @@ function Embalses() {
           <h1><strong className="purple">Embalses</strong></h1>
           <p>Introduce las coordenadas y el radio para encontrar embalses cercanos.</p>
           <InputGroup className="mb-3">
-            <Button variant="outline-secondary" onClick={getLocation}>
+            <Button variant="outline-secondary" onClick={getLocation} style={{ backgroundColor: "#006400", color: "white" }}>
               Obtener mi ubicación
             </Button>
           </InputGroup>
