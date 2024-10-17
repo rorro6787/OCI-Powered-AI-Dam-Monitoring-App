@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, InputGroup, FormControl, Table, ListGroup, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import axios from "axios";
-import { FaSearch } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
+import { FaSearch, FaTimes } from "react-icons/fa";
+import { Line } from "react-chartjs-2";
+import 'chart.js/auto';
 
 function Estadisticas() {
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const [embalses, setEmbalses] = useState([]);
-  const [selectedEmbalse, setSelectedEmbalse] = useState(null); // Cambiado para almacenar solo un embalse
+  const [selectedEmbalse, setSelectedEmbalse] = useState(null);
+  const [chartData, setChartData] = useState(null);
 
   useEffect(() => {
     axios.get("https://gc22e38dbd8c2e8-polishcow.adb.eu-madrid-1.oraclecloudapps.com/ords/polish_user/info_embalse/?limit=1000")
@@ -35,15 +37,41 @@ function Estadisticas() {
   };
 
   const handleSuggestionClick = (embalse) => {
-    setSelectedEmbalse(embalse); // Cambiado para establecer un solo embalse
+    setSelectedEmbalse(embalse);
     setSearchTerm(embalse.nombre);
     setSuggestions([]);
+    fetchChartData(embalse.id);
   };
 
   const clearSearch = () => {
     setSearchTerm("");
     setSuggestions([]);
-    setSelectedEmbalse(null); // Limpiar selección si se borra el campo de búsqueda
+    setSelectedEmbalse(null);
+    setChartData(null);
+  };
+
+  const fetchChartData = (id) => {
+    axios.get(`https://gc22e38dbd8c2e8-polishcow.adb.eu-madrid-1.oraclecloudapps.com/ords/polish_user/embalse_agua/?q={"ID":{"$eq":${id}}}&limit=10000`)
+      .then(response => {
+        const data = response.data.items;
+        const years = data.map(item => new Date(item.fecha).getFullYear()); // Extraer solo el año
+        const aguaActual = data.map(item => item.agua_actual);
+
+        setChartData({
+          labels: years,
+          datasets: [
+            {
+              label: 'Relación Agua - Año', // Cambiado el label a relación-agua-año
+              data: aguaActual,
+              borderColor: 'rgba(75,192,192,1)',
+              backgroundColor: 'rgba(75,192,192,0.2)',
+            }
+          ]
+        });
+      })
+      .catch(error => {
+        console.error("Error fetching data: ", error);
+      });
   };
 
   return (
@@ -82,7 +110,7 @@ function Estadisticas() {
           )}
         </Col>
       </Row>
-      {selectedEmbalse && ( // Cambiado para mostrar solo si hay un embalse seleccionado
+      {selectedEmbalse && (
         <Row style={{ justifyContent: "center", textAlign: "center", marginTop: "20px" }}>
           <Col md={8}>
             <Table striped bordered hover variant="dark">
@@ -105,6 +133,14 @@ function Estadisticas() {
                 </tr>
               </tbody>
             </Table>
+          </Col>
+        </Row>
+      )}
+      {chartData && (
+        <Row style={{ justifyContent: "center", textAlign: "center", marginTop: "20px" }}>
+          <Col md={8}>
+            <h3>Relación Agua - Año</h3> {/* Título de la gráfica */}
+            <Line data={chartData} />
           </Col>
         </Row>
       )}
