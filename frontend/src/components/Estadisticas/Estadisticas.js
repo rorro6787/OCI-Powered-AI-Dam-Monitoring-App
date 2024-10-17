@@ -79,7 +79,7 @@ function Estadisticas() {
       <Particle />
       <Row style={{ justifyContent: "center", textAlign: "center" }}>
         <Col md={8}>
-          <h1 className="estadisticas-title"><strong className="purple">Estadísticas de Embalses</strong></h1>
+          <h1 className="estadisticas-title"><strong className="titulo">Estadísticas de Embalses</strong></h1>
           <div className="embalses-description">
             <p>
               En esta sección podrás buscar embalses y visualizar atributos importantes de cada embalse,

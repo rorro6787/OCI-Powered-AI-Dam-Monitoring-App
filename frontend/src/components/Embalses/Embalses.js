@@ -147,7 +147,7 @@ function Embalses() {
       <Particle />
       <Row style={{ justifyContent: "center", textAlign: "center", marginTop: "20px" }}>
         <Col md={8}>
-          <h1><strong className="purple">Embalses</strong></h1>
+          <h1><strong className="titulo">Embalses</strong></h1>
           <p>Introduce las coordenadas y el radio para encontrar embalses cercanos.</p>
           <InputGroup className="mb-3">
             <Button variant="outline-secondary" onClick={getLocation} style={{ backgroundColor: "#006400", color: "white" }}>

@@ -359,12 +359,14 @@ button:focus {
   z-index: -1;
 }
 
+
+
 .titulo {
   font-family: 'Montserrat', sans-serif; /* Fuente bonita */
   font-size: 1.5rem; /* Fuente grande */
   color: #006400; /* Verde oscuro */
   position: relative;
-  z-index: 9000 !important; /* Por encima de todas las capas */
+  z-index: 9000 !; /* Por encima de todas las capas */
   text-align: center; /* Centrar el texto */
   margin-top: 20px; /* Espacio superior */
 }
