@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
 import { FaMapMarkerAlt, FaWater, FaChartBar } from "react-icons/fa";
-import lynx from "../Assets/BlueLynx_Logo_Icon.png";
+import lynx from "../Assets/icono.png";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
