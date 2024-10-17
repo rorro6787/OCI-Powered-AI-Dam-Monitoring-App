@@ -14,22 +14,37 @@ html {
 
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(151, 140, 140, 0.9),  /* Gris claro, neutro y profesional */
-    rgba(40, 59, 59, 0.85)     /* Gris oscuro con matiz verde azulado, da seriedad */
+    rgba(173, 216, 230, 0.9),  /* Azul claro, evoca el agua */
+    rgba(0, 105, 148, 0.85)    /* Azul medio, profundo y calmante */
   );
   
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(70, 130, 180, 0.8),   /* Azul acero, transmite confianza y serenidad */
-    rgba(34, 49, 63, 0.85)     /* Azul petróleo, da un aire moderno y masculino */
+    rgba(0, 191, 255, 0.8),    /* Azul cielo, brillante y refrescante */
+    rgba(25, 25, 112, 0.85)    /* Azul medianoche, profundo y sereno */
   );
   
 
-  --imp-text-color: #627ef0;
+  --imp-text-color: #00BFFF;  /* Azul cielo, brillante y refrescante */
+  --font-family: 'Montserrat', sans-serif; /* Fuente elega
+  nte y fluida */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: var(--section-background-color);
+  color: var(--imp-text-color);
 }
 
 .purple {
   color: var(--imp-text-color) !important;
+}
+
+.img-fluid {
+  border-radius: 15px; /* Redondea las esquinas de las imágenes */
 }
 
 .red {
@@ -279,6 +294,10 @@ button:focus {
 
 .home-header {
   padding-top: 80px !important;
+  font-size: 2rem;
+  color: #00BFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .home-section {
@@ -287,8 +306,16 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/posible_background.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.img-fluid {
+  border-radius: 15px; /* Redondea las esquinas de las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+  max-width: 100%;
+  height: auto;
 }
 
 .home-content {
