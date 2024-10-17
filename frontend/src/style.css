@@ -502,6 +502,35 @@ button:focus {
   color: #220c86 !important;
 }
 
+/* ESTADISTICAS */
+.estadisticas-section {
+  position: relative !important;
+  padding-top:5% !important;
+  padding-bottom: 30px !important;
+}
+
+.embalses-description {
+  text-align: center; /* Centra el contenido horizontalmente */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+.estadisticas-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #6f42c1;
+  text-align: center;
+}
+
+.estadisticas-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #6f42c1;
+  text-align: center;
+}
+
+
 /* --------- */
 /* Footer */
 /* --------- */
