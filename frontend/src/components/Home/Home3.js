@@ -13,7 +13,7 @@ function Home3() {
             {/* <Particle /> */}
             <Container className="home3-content">
                 <h1 style={{ paddingBottom: 15 }} className="heading">
-                    Título del Home 3 - Parte funcional (embalses, estadisticas...)
+                    ¿Qué puedes hacer con <span className="main-name"> Polish Cow</span>?
                 </h1>
                 <Row>
                     {/* Primera Columna */}

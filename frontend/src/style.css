@@ -37,6 +37,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: var(--section-background-color);
   color: var(--imp-text-color);
+  position: relative;
+  z-index: -1;
 }
 
 .purple {
@@ -94,11 +96,15 @@ button:focus {
 
 ::-webkit-scrollbar {
   width: 8px;
+  position: relative;
+  z-index: -1;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #2d1950;
+  position: relative;
+  z-index: -1;
 }
 
 /* Handle */
@@ -121,6 +127,8 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
+  position: relative;
+  z-index: -1;
 }
 
 .navbar {
@@ -128,6 +136,8 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  position: relative;
+  z-index: -1;
 }
 
 .navbar-toggler {
@@ -186,6 +196,8 @@ button:focus {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
+    position: relative;
+  z-index: -1;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -256,6 +268,7 @@ button:focus {
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
+
 }
 
 @keyframes wave-animation {
@@ -290,6 +303,8 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 .home-header {
@@ -298,6 +313,8 @@ button:focus {
   color: #00BFFF;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  position: relative;
+  z-index: -1;
 }
 
 .home-section {
@@ -309,6 +326,8 @@ button:focus {
   background-size: cover;
   padding: 50px 0;
   text-align: center;
+  position: relative;
+  z-index: -1;
 }
 
 .img-fluid {
@@ -316,32 +335,44 @@ button:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
   max-width: 100%;
   height: auto;
+  position: relative;
+  z-index: -1;
 }
 
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  position: relative;
+  z-index: -1;
 }
 
 .home3-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: center;
+  position: relative;
+  z-index: -1;
 }
 
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
+  position: relative;
+  z-index: -1;
 }
 
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
+  position: relative;
+  z-index: -1;
 }
 
 .main-name {
-  color: #715ff8; /* Mi nombre: "Hi there, I'm IVAN" */
+  color: #715ff8;
+  position: relative;
+  z-index: -1;
 }
 
 /* Esto es en el inicio del home y los Projects, la simulación de typing interactivo */
@@ -349,6 +380,8 @@ button:focus {
   font-size: 2.2em !important;
   color: #7a6adf !important;
   font-weight: 600 !important;
+  position: relative;
+  z-index: -1;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
@@ -382,6 +415,8 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  position: relative;
+  z-index: -1;
 }
 
 .home-about-description {
@@ -389,18 +424,24 @@ button:focus {
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
+  position: relative;
+  z-index: -1;
 }
 
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
   text-align: left;
+  position: relative;
+  z-index: -1;
 }
 
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
   color: white !important;
+  position: relative;
+  z-index: -1;
 }
 
 .home-about-social-links {
@@ -409,6 +450,8 @@ button:focus {
   display: inline-block !important;
   position: relative !important;
   padding-inline-start: 0 !important;
+  position: relative;
+  z-index: -1;
 }
 
 .home-social-icons {
@@ -808,6 +851,8 @@ button:focus {
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
+  position: relative;
+  z-index: -1;
 }
 
 .resume-left {

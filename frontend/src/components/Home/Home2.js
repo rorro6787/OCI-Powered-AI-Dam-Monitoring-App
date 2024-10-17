@@ -13,43 +13,17 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> OUR TEAM (POLISH COW ......)
-            </h1>
-            <p className="home-about-body">
-                I fell in love with cybersecurity and emerging technologies a long time ago.
-              <br />
-              <br />
-              I have experience with
-              <i>
-                <b className="purple"> pentesting </b>
-              </i> on many online platforms and builiding home lab environments to 
-              learn both the 
-              <i>
-                <b className="red"> offensive </b>
-              </i> and 
-               <i>
-                <b className="blue"> defensive </b>
-              </i> point of view.
-              <br />
-              <br />
-              My field of Interest is {" "}
-              <i>
-                <b className="purple">Offensive Security </b>, but
-                I have also been exploring the{" "}
-                <b className="purple">
-                  Generative AI
-                </b> area.
-              </i>
-              <br />
-              <br />
-              Whenever possible, I try to apply my passion participating in CTFs and doing
-              practical projects. The{" "}
-              <b className="purple">synergy</b> of <b className="red">cybersecurity</b>{" "}
-              and{" "} <b className="green">AI</b> is inevitable 🤝.
-            </p>
-          </Col>
+        <Col md={8} className="home-about-description">
+  <h1 style={{ fontSize: "2.6em" }}>
+    LET ME <span className="purple"> INTRODUCE </span> OUR TEAM
+  </h1>
+  <p className="home-about-body">
+    Somos un grupo llamado <b>Polish Cow</b> formado cinco estudiantes de informática apasionados por la <b>sostenibilidad</b> y la <b>tecnología</b>. Motivados por la creciente <b>escasez de agua</b>, hemos decidido enfocarnos en la <b>gestión</b> y <b>optimización</b> de los embalses, con la esperanza de aportar <b>soluciones innovadoras</b> a este problema crítico.
+    <br />
+    <br />
+    Nos motiva la oportunidad de <b>aprender</b> y <b>contribuir</b> a una causa tan vital para el futuro de nuestro planeta.
+  </p>
+</Col>
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
