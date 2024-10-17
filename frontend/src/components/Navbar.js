@@ -38,8 +38,9 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={lynx} className="img-fluid logo" alt="brand" />
-          <b className="purple">Ivan (LinceAzul)</b>
+          <b className="purple">Polish Cow</b>
         </Navbar.Brand>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
