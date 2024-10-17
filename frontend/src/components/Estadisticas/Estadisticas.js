@@ -63,8 +63,8 @@ function Estadisticas() {
             {
               label: 'Relación Agua - Año', // Cambiado el label a relación-agua-año
               data: aguaActual,
-              borderColor: 'rgba(75,192,192,1)',
-              backgroundColor: 'rgba(75,192,192,0.2)',
+              borderColor: 'rgba(0, 0, 255, 1)', // Color azul eléctrico para la línea
+              backgroundColor: 'rgba(0, 0, 255, 0.2)', // Fondo azul eléctrico con transparencia
             }
           ]
         });
