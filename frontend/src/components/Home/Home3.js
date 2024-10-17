@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import miCara from "../../Assets/mi_cara.jpeg";
 import Type from "./Type";
+import { Link } from "react-router-dom";
+
 
 function Home3() {
   return (
@@ -24,9 +26,9 @@ function Home3() {
                     <p>Localiza fácilmente todos los embalses dentro de un radio ajustable de hasta 100 km,
                        usando tus coordenadas GPS o ingresando una ubicación manualmente.
                     </p>
-                    <a href="https://enlace-1.com" target="_blank" rel="noopener noreferrer">
+                    <Link to="/embalses">
                         Descubre más
-                    </a>
+                    </Link>
                     </Col>
 
                     {/* Segunda Columna */}

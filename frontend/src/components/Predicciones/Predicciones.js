@@ -6,16 +6,19 @@ import SpamGuard from "../../Assets/Projects/SpamGuard.png";
 import PentestingAD from "../../Assets/Projects/Pentesting_AD.png";
 import Type2 from "./Type2";
 
-function Projects() {
+function Predicciones() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Nuestras <strong className="purple">PREDICCIONES </strong>
         </h1>
         <br />
-        <p style={{ color: "white" }}>
+
+
+
+{/*         <p style={{ color: "white" }}>
         In my free time, I enjoy working on projects that help me apply and deepen the theoretical knowledge I've gained
         over the years. These projects allow me to learn by doing, experimenting, and putting my skills into practice.
         <br />
@@ -52,11 +55,11 @@ function Projects() {
         </Row>
         <div class="more-projects">
           <Type2 />
-        </div>
+        </div> */}
         
       </Container>
     </Container>
   );
 }
 
-export default Projects;
+export default Predicciones;

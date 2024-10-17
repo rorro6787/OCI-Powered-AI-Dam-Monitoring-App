@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
+import { FaMapMarkerAlt, FaWater, FaChartBar } from "react-icons/fa";
 import lynx from "../Assets/BlueLynx_Logo_Icon.png";
 import {
   AiOutlineHome,
@@ -60,37 +61,34 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/embalses"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <FaMapMarkerAlt style={{ marginBottom: "2px" }} /> Embalses
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/predicciones"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <FaWater style={{ marginBottom: "2px" }} /> Predicciones
+              </Nav.Link>
+            </Nav.Item>
+
+             <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/estadisticas"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaChartBar style={{ marginBottom: "2px" }} /> Estadísticas
               </Nav.Link>
             </Nav.Item>
 
 {/*             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
               <Nav.Link
                 href="https://soumyajitblogs.vercel.app/"
                 target="_blank"
