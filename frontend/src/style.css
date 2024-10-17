@@ -363,11 +363,10 @@ button:focus {
 }
 
 
-
 .titulo {
   font-family: 'Montserrat', sans-serif; /* Fuente bonita */
   font-size: 1.5rem; /* Fuente grande */
-  color: #006400; /* Verde oscuro */
+  color: #2dda55; /* Verde oscuro */
   position: relative;
   z-index: 9000 !; /* Por encima de todas las capas */
   text-align: center; /* Centrar el texto */
