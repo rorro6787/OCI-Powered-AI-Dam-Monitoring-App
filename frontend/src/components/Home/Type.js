@@ -6,11 +6,11 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Computer Engineer",
-          "Offensive Security Practitioner",
-          "Cybersecurity Enthusiast",
-          "Persistent Challenge Seeker",
-          "Curious Explorer of AI",
+          "El agua es vida",
+          "Cada gota es importante",
+          "Informate y actúa",
+          "¡Cuidemosla juntos!",
+          "Protejamos el futuro del agua juntos",
         ],
         autoStart: true,
         loop: true,
@@ -20,4 +20,4 @@ function Type() {
   );
 }
 
-export default Type;
+export default Type;

@@ -10,20 +10,21 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        {/* <Particle /> */}
+        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                ¡Bienvenido!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'm
-                <strong className="main-name"> Ivan Iroslavov</strong>
+                Somos
+                <strong className="main-name"> Polish Cow</strong>
+                
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -48,4 +49,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home;
