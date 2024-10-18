@@ -1,4 +1,4 @@
-# Hackaton
+# OCI-Powered-Intelligent-Water-Dam-Monitoring-Application
 <p align="center">
   <img src="https://github.com/rorro6787/rorro6787/blob/main/Images/Oracle-Cloud-Emblem.png" width="400"/>
 </p>
@@ -63,7 +63,7 @@ Contributions are welcome! Please follow these steps:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature-branch`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
 4. Push to the branch (`git push origin feature-branch`)
 5. Create a new Pull Request
 
