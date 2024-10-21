@@ -1,22 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 html {
-
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(173, 216, 230, 0.9),  /* Azul claro, evoca el agua */
-    rgba(0, 105, 148, 0.85)    /* Azul medio, profundo y calmante */
+    rgba(230, 230, 230, 0.9),  /* Gris claro */
+    rgba(100, 100, 100, 0.85)  /* Gris oscuro */
   );
   
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(0, 191, 255, 0.8),    /* Azul cielo, brillante y refrescante */
-    rgba(25, 25, 112, 0.85)    /* Azul medianoche, profundo y sereno */
+    rgba(180, 180, 180, 0.8),  /* Gris intermedio */
+    rgba(50, 50, 50, 0.85)     /* Gris oscuro */
   );
-  
 
-  --imp-text-color: #00BFFF;  /* Azul cielo, brillante y refrescante */
-  --font-family: 'Montserrat', sans-serif; /* Fuente elega
-  nte y fluida */
+  --imp-text-color: #ffffff;  /* Blanco */
+  --font-family: 'Montserrat', sans-serif; /* Fuente elegante y fluida */
 }
 
 body {
@@ -30,27 +26,9 @@ body {
   z-index: -1;
 }
 
-.purple {
-  color: var(--imp-text-color) !important;
-}
-.black {
-  color: #000000 !important;
-}
 
 .img-fluid {
   border-radius: 15px; /* Redondea las esquinas de las imágenes */
-}
-
-.red {
-  color: #ef3030 !important;
-}
-
-.blue {
-  color: #2d98da !important;
-}
-
-.green {
-  color: #2dda55 !important;
 }
 
 button:focus {
@@ -93,21 +71,21 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #cacaca;
   position: relative;
   z-index: -1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(179, 130, 235, 0.959);
-  border-radius: 12px;
+  background: rgba(123, 128, 134, 0.959);
+  border-radius: 7px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(175, 121, 216, 0.911);
-  border-radius: 12px;
+  background: rgba(123, 128, 134, 0.959);
+  border-radius: 7px;
 }
 
 /* --------- */
@@ -135,18 +113,6 @@ button:focus {
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
-}
-
-.navbar-toggler span {
-  display: block !important;
-  background-color: #be50f4 !important;
-  height: 4px !important;
-  width: 27px !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  transform: rotate(0deg) !important;
-  left: 0 !important;
-  opacity: 1 !important;
 }
 
 .navbar-toggler:focus,
@@ -186,7 +152,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #212330 !important;
     position: relative;
   z-index: -1;
   }
@@ -239,7 +205,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #1c93c2;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -288,8 +254,6 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-
-
 
 #tsparticles {
   position: fixed !important;
@@ -352,8 +316,8 @@ button:focus {
 
 .titulo {
   font-family: 'Montserrat', sans-serif; /* Fuente bonita */
-  font-size: 1.5rem; /* Fuente grande */
-  color: #2dda55; /* Verde oscuro */
+  font-size: 2.5rem; /* Fuente grande */
+  color: #180058; /* Verde oscuro */
   position: relative;
   z-index: 9000 !; /* Por encima de todas las capas */
   text-align: center; /* Centrar el texto */
@@ -374,23 +338,17 @@ button:focus {
   z-index: -1;
 }
 
-.main-name {
-  color: #715ff8;
-  position: relative;
-  z-index: -1;
-}
-
 /* Esto es en el inicio del home y los Projects, la simulación de typing interactivo */
 .Typewriter__wrapper { 
   font-size: 2.2em !important;
-  color: #7a6adf !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
   position: relative;
   z-index: -1;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #1a1777 !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 767px) {
@@ -480,31 +438,16 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #000000;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
-}
-
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #441f95;
-}
-
-.home-social-icons:hover {
-  color: #5b209e;
-  box-shadow: 0 0 5px #5b209e;
-  text-shadow: 0 0 2px #5b209e;
 }
 
 .social-icons {
   display: inline-block !important;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-.icon-colour {
-  color: #220c86 !important;
 }
 
 /* ESTADISTICAS */
@@ -523,7 +466,7 @@ button:focus {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #6f42c1;
+  color: #0d031f;
   text-align: center;
 }
 
@@ -531,7 +474,7 @@ button:focus {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #6f42c1;
+  color: #3f0aa1;
   text-align: center;
 }
 
@@ -577,7 +520,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #88a2c0 !important;
 }
 /* --------- */
 /* Projects */
@@ -649,7 +592,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(85, 72, 144, 0.561) !important;
 }
 
 .blog-card {
@@ -680,7 +623,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(52, 74, 175, 0.65) !important;
 }
 
 .card-img-top {
@@ -697,14 +640,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #2c41b8 !important;
+  border-color: #2b5094 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #3076e0d7 !important;
+  border-color: #20c5c5d7 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -719,7 +662,7 @@ button:focus {
 
 /* --------- */
 /* EMBALSES */
-/* --------- */
+/* --------
 
 /* About subset: Certification List*/
 
@@ -826,7 +769,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(92, 80, 197, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -845,7 +788,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(115, 194, 230, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -918,7 +861,7 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #1c9bd6;
   position: relative;
 }
 

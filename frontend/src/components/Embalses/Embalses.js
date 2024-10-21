@@ -58,9 +58,10 @@ function Embalses() {
     if (circle) {
       map.removeLayer(circle); // Eliminar el círculo anterior
     }
+
     // Crear un nuevo círculo
     const newCircle = L.circle([lat, lon], {
-      color: "blue",
+      color: "bluesky",
       radius: radius * 1000 // Convertir km a metros
     }).addTo(map);
     setCircle(newCircle); // Actualizar el estado del círculo

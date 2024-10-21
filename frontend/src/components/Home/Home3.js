@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import i1 from "../../Assets/Home/embalse1.jpeg";
 import i2 from  "../../Assets/Home/ai2.jpeg";
 import i3 from  "../../Assets/Home/estadisticas.jpeg";
-import { Link } from "react-router-dom";
 function Home3() {
   return (
     <section>
