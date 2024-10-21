@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 html {
-/*   --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(10, 25, 80, 0.904)
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(10, 20, 70, 0.863)
-  ); */
-  /* --imp-text-color: #c770f0; */
 
   --section-background-color: linear-gradient(
     to bottom left,
@@ -80,7 +68,6 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

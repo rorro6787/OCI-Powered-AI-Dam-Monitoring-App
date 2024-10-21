@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Form, InputGroup, Button, Table } from "react-bootstrap";
 import Particle from "../Particle";
 import L from "leaflet"; // Asegúrate de tener instalada la librería leaflet
 import "leaflet/dist/leaflet.css"; // Importar estilos de leaflet
-import { FaSearch } from "react-icons/fa";
 import embalseImg from "../../Assets/emb.png"; // Asegúrate de tener la imagen en la ruta correcta
 
 function Embalses() {

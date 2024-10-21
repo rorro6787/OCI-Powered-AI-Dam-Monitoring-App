@@ -1,10 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Spinner } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
-import SpamGuard from "../../Assets/Projects/SpamGuard.png";
-import PentestingAD from "../../Assets/Projects/Pentesting_AD.png";
-import Type2 from "./Type2";
 
 function Predicciones() {
   return (
