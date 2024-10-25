@@ -1,3 +1,4 @@
+pmdarima==2.0.4
 requests
 statsmodels
 matplotlib
