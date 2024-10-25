@@ -65,16 +65,6 @@ def request_dam(id: int):
         # Imprimir las predicciones\nRED
         print("\nPREDICCIONES\n")
         print(forecast_df)
-
-        
-
-
-
-        
-
-
-
-
         """
         mean_data = df.groupby('fecha')['agua_actual'].mean().reset_index()
         plt.figure(figsize=(10, 6))
